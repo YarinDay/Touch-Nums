@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Touch The Nums</title>
+</head>
+
+<body onload="init()">
+    <div class="game-window">
+
+        <div>
+            <button onclick="startGame(this)">Start Game!</button>
+        </div>
+        <div class="timer-display">
+            00 : 000
+        </div>
+        <div class="best-score">
+            00 : 000
+        </div>
+        <div>
+            <button class="16" onclick="selectLevel(this)">Easy(4x4)</button>
+            <button class="25" onclick="selectLevel(this)">Medium(5x5)</button>
+            <button class="36" onclick="selectLevel(this)">Hard(6x6)</button>
+        </div>
+        <div class="board">
+            <table>
+                <tbody class="table-layout">
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/stoper.js"></script>
+
+</body>
+
+</html>
